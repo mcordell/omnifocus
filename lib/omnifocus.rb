@@ -1,5 +1,6 @@
 old_w, $-w = $-w, nil
 require 'rb-scpt'
+require "omnifocus/version"
 $-w = old_w
 
 NERD_FOLDER = ENV["OF_FOLDER"] || "nerd"
@@ -29,7 +30,6 @@ include Appscript
 # bts_id: a string uniquely identifying a task: SYSTEM(-projectname)?#id
 
 class OmniFocus
-  VERSION = "2.4.0"
 
   ##
   # bug_db = {
